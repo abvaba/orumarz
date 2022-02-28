@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>اروم ارز</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg"><label class="ms-2" for="menuToggle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" fill="none" stroke="#3F4A99" stroke-width="8" stroke-linecap="round">
+                    <line x1="10.7" y1="44.6" x2="185.3" y2="44.6"></line>
+                    <line x1="10.7" y1="151.4" x2="185.3" y2="151.4"></line>
+                    <line x1="72" y1="98" x2="185.3" y2="98"></line>
+                </svg><input id="menuToggle" type="checkbox"></label><a class="login ms-2 position-relative" href="javascript:void(0)">
+            <img src="images/avatar.svg">
+                <div class="user-info position-absolute d-flex flex-row align-items-start justify-content-start">
+                    <div class="uiI d-flex flex-column align-items-center justify-content-start"><img src="images/avatar.svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 19">
+                            <linearGradient id="SVGbg" gradientUnits="userSpaceOnUse" x1="0" y1="9.5" x2="100" y2="9.5">
+                                <stop offset="0" style="stop-color:#3f4a99"></stop>
+                                <stop offset="0.75" style="stop-color:#3f4a99"></stop>
+                                <stop offset="0.75" style="stop-color:#96959b"></stop>
+                                <stop offset="1" style="stop-color:#96959b"></stop>
+                            </linearGradient>
+                            <g fill="url('#SVGbg')">
+                                <polygon points="30,0 27.2,6.6 20,7.2 25.5,12 23.8,19 30,15.3 36.2,19 34.5,12 40,7.2 32.8,6.6"></polygon>
+                                <polygon points="50,0 47.2,6.6 40,7.2 45.5,12 43.8,19 50,15.3 56.2,19 54.5,12 60,7.2 52.8,6.6"></polygon>
+                                <polygon points="70,0 67.2,6.6 60,7.2 65.5,12 63.8,19 70,15.3 76.2,19 74.5,12 80,7.2 72.8,6.6"></polygon>
+                                <polygon points="100,7.2 92.8,6.6 90,0 87.2,6.6 80,7.2 85.5,12 83.8,19 90,15.3 96.2,19 94.5,12"></polygon>
+                                <polygon points="10,0 7.2,6.6 0,7.2 5.5,12 3.8,19 10,15.3 16.2,19 14.5,12 20,7.2 12.8,6.6"></polygon>
+                            </g>
+                        </svg></div>
+                    <div class="uiII d-flex flex-column align-items-start justify-content-start"><span>لورم ایپسوم</span><span>09112325656</span><span>تاریخ عضویت : 4 ماه پیش</span></div>
+                    <div class="uiIII d-flex flex-column align-items-end justify-content-end"><button><svg class="power" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                                <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path>
+                            </svg></button></div>
+                </div>
+            </a>
+            <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input id="checkbox" type="checkbox">
+                    <div class="slider round"></div>
+                </label><span>حالت تیره</span></div><a class="me-auto" href="javascript:void(0)"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.8 196">
+                    <polygon points="53.5,142.4 26.8,142.4 26.8,98 26.8,53.6 53.5,53.6 53.5,53.5 63,53.5 63,0 36.2,0 36.2,26.8 0,26.8 0,44.5 0,53.6 0,98 0,142.4 0,151.5 0,169.2 36.2,169.2 36.2,196 63,196 63,142.5 53.5,142.5"></polygon>
+                    <path d="M139.7,98c11.8-8.3,11.1-28.9,11.1-28.9c0.6-33.8-28.9-40.8-36.3-42.1V0H87.7v53.5H110c1.9,0,13.3,4,13.8,15.6c0.5,12.3-14.5,15.5-14.5,15.5H54.6V98v13.4h54.6c0,0,15,3.2,14.5,15.5c-0.5,11.7-11.9,15.6-13.8,15.6H87.7V196h26.8v-27.1c7.4-1.2,37-8.3,36.3-42.1C150.8,126.9,151.5,106.3,139.7,98z"></path>
+                </svg></a>
+            <ul class="menu d-flex flex-row flex-wrap align-items-start justify-content-start">
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/home.svg">خانه</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/person.svg">پروفایل</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/orders.svg">سفارشات</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/authentication.svg">احراز هویت</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/graph.svg">قیمت لحظه ای</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/wages.svg">کارمزدها</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/qMark.svg">سؤالات متداول</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/comments.svg">نظرات کاربران</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/cominnication.svg">ارتباط با مدیریت</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/about.svg">درباره ما</a></li>
+                <div class="col-12 px-0 pb-0 pt-2 my-2 d-flex flex-row align-items-center justify-content-end menu-bottom-bar"><button class="close_btn"><svg class="power" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                            <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path>
+                        </svg></button></div>
+            </ul>
+        </nav>
+        <div class="row">
+
+            <div class="col-lg-12 mx-auto" id="m_price">
+                <div class="col-12 p-0 d-flex flex-column align-items-center justify-content-start">
+                    <h6 class="text-center mb-3 ms-auto">قیمت لحظه ای ارزهای دیجیتال</h6>
+                    <div class="col-12 p-0 overflow-auto">
+                        <table class="display nowrap" id="blockChain">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th class="pe-2">ارز دیجیتال</th>
+                                    <th>قیمت خرید(تومان)</th>
+                                    <th>قیمت فروش(تومان)</th>
+                                    <th>قیمت جهانی(تتر)</th>
+                                    <th>تغییرات</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/mPrice.js"></script>
+</body>
+
+</html>

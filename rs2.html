@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>اروم ارز</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg"><label class="ms-2" for="menuToggle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" fill="none" stroke="#3F4A99" stroke-width="8" stroke-linecap="round">
+                    <line x1="10.7" y1="44.6" x2="185.3" y2="44.6"></line>
+                    <line x1="10.7" y1="151.4" x2="185.3" y2="151.4"></line>
+                    <line x1="72" y1="98" x2="185.3" y2="98"></line>
+                </svg><input id="menuToggle" type="checkbox"></label><a class="login ms-2 position-relative" href="javascript:void(0)">
+        <img src="images/avatar.svg">
+                <div class="user-info position-absolute d-flex flex-row align-items-start justify-content-start">
+                    <div class="uiI d-flex flex-column align-items-center justify-content-start"><img src="images/avatar.svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 19">
+                            <linearGradient id="SVGbg" gradientUnits="userSpaceOnUse" x1="0" y1="9.5" x2="100" y2="9.5">
+                                <stop offset="0" style="stop-color:#3f4a99"></stop>
+                                <stop offset="0.75" style="stop-color:#3f4a99"></stop>
+                                <stop offset="0.75" style="stop-color:#96959b"></stop>
+                                <stop offset="1" style="stop-color:#96959b"></stop>
+                            </linearGradient>
+                            <g fill="url('#SVGbg')">
+                                <polygon points="30,0 27.2,6.6 20,7.2 25.5,12 23.8,19 30,15.3 36.2,19 34.5,12 40,7.2 32.8,6.6"></polygon>
+                                <polygon points="50,0 47.2,6.6 40,7.2 45.5,12 43.8,19 50,15.3 56.2,19 54.5,12 60,7.2 52.8,6.6"></polygon>
+                                <polygon points="70,0 67.2,6.6 60,7.2 65.5,12 63.8,19 70,15.3 76.2,19 74.5,12 80,7.2 72.8,6.6"></polygon>
+                                <polygon points="100,7.2 92.8,6.6 90,0 87.2,6.6 80,7.2 85.5,12 83.8,19 90,15.3 96.2,19 94.5,12"></polygon>
+                                <polygon points="10,0 7.2,6.6 0,7.2 5.5,12 3.8,19 10,15.3 16.2,19 14.5,12 20,7.2 12.8,6.6"></polygon>
+                            </g>
+                        </svg></div>
+                    <div class="uiII d-flex flex-column align-items-start justify-content-start"><span>لورم ایپسوم</span><span>09112325656</span><span>تاریخ عضویت : 4 ماه پیش</span></div>
+                    <div class="uiIII d-flex flex-column align-items-end justify-content-end"><button><svg class="power" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                                <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path>
+                            </svg></button></div>
+                </div>
+            </a>
+            <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input id="checkbox" type="checkbox">
+                    <div class="slider round"></div>
+                </label><span>حالت تیره</span></div><a class="me-auto" href="javascript:void(0)"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.8 196">
+                    <polygon points="53.5,142.4 26.8,142.4 26.8,98 26.8,53.6 53.5,53.6 53.5,53.5 63,53.5 63,0 36.2,0 36.2,26.8 0,26.8 0,44.5 0,53.6 0,98 0,142.4 0,151.5 0,169.2 36.2,169.2 36.2,196 63,196 63,142.5 53.5,142.5"></polygon>
+                    <path d="M139.7,98c11.8-8.3,11.1-28.9,11.1-28.9c0.6-33.8-28.9-40.8-36.3-42.1V0H87.7v53.5H110c1.9,0,13.3,4,13.8,15.6c0.5,12.3-14.5,15.5-14.5,15.5H54.6V98v13.4h54.6c0,0,15,3.2,14.5,15.5c-0.5,11.7-11.9,15.6-13.8,15.6H87.7V196h26.8v-27.1c7.4-1.2,37-8.3,36.3-42.1C150.8,126.9,151.5,106.3,139.7,98z"></path>
+                </svg></a>
+            <ul class="menu d-flex flex-row flex-wrap align-items-start justify-content-start">
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/home.svg">خانه</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/person.svg">پروفایل</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/orders.svg">سفارشات</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/authentication.svg">احراز هویت</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/graph.svg">قیمت لحظه ای</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/wages.svg">کارمزدها</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/qMark.svg">سؤالات متداول</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/comments.svg">نظرات کاربران</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/cominnication.svg">ارتباط با مدیریت</a></li>
+                <li><a class="d-flex flex-column align-items-center justify-content-center p-2" href="javascript:void(0)"><img src="images/about.svg">درباره ما</a></li>
+                <div class="col-12 px-0 pb-0 pt-2 my-2 d-flex flex-row align-items-center justify-content-end menu-bottom-bar"><button class="close_btn"><svg class="power" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                            <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path>
+                        </svg></button></div>
+            </ul>
+        </nav>
+        <div class="row">
+
+            <div class="col-11 col-md-8 col-lg-4 p-0 mx-auto" id="register">
+                <div id="rocket-wrap"><svg class="mx-auto" width="211" height="211" viewBox="0 0 211 211" id="rocket">
+                        <circle class="icon-circle bg" cx="105.5" cy="105.5" r="105.5"></circle>
+                        <g class="rocket-inner">
+                            <path class="fire" id="fire-middle" d="M106.9,146.8c3.9,0,7.1,3.2,7.1,7.1c0,7.8-7.1,16-7.1,16s-7.1-8.3-7.1-16
+		C99.8,150,103,146.8,106.9,146.8z"></path>
+                            <path class="fire" id="fire-right" d="M112.1,148c3.6-1.6,7.8,0,9.4,3.5c3.2,7.1,0.1,17.5,0.1,17.5s-9.9-4.7-13.1-11.6
+		C106.9,153.8,108.5,149.6,112.1,148z"></path>
+                            <path class="fire" id="fire-left" d="M101.4,149.4c3.2,2.2,4.1,6.6,1.9,9.9c-4.4,6.4-14.9,9.2-14.9,9.2s-1.2-10.9,3.1-17.2
+		C93.7,148,98.1,147.2,101.4,149.4z"></path>
+                            <path class="fire" id="fire-small-left" d="M101.2,154.4c2.2,0.4,3.7,2.6,3.2,4.8c-0.9,4.4-5.8,8.3-5.8,8.3s-3.1-5.5-2.2-9.9
+		C96.8,155.4,99,154,101.2,154.4L101.2,154.4z"></path>
+                            <path class="fire" id="fire-small-right" d="M110.1,155.5c2-1,4.5-0.1,5.5,1.9c2,4,0.3,10.1,0.3,10.1s-5.8-2.6-7.7-6.5
+		C107.2,158.9,108,156.5,110.1,155.5L110.1,155.5z"></path>
+                            <path class="rocket-bottom" d="M115.1,138.2h-3.3c-1.6,0-3.2-0.1-4.8-0.1s-3.3,0-4.8,0.1h-3.3c-7.3-7.9-12.4-26.2-12.4-47.4
+		c0-28.5,9.2-51.7,20.5-51.7c11.3,0,20.5,23.1,20.5,51.7C127.4,112,122.3,130.3,115.1,138.2L115.1,138.2z"></path>
+                            <path class="wing-base" d="M124.7,94.1c0,0,17.7,3.3,12.9,48.1l-18.1-14.1L124.7,94.1z"></path>
+                            <path class="wing-shadow" d="M116.2,107.2c10.5-5.6,22.7,22.2,21.4,34.9l-18.1-14.1C119.5,128.1,114.1,111.2,116.2,107.2L116.2,107.2z"></path>
+                            <path class="wing-base" d="M93.1,128.1l-18.1,14.1C70.3,97.4,88,94.1,88,94.1L93.1,128.1z"></path>
+                            <path class="wing-shadow" d="M93.1,128.1l-18.1,14.1c-1.4-12.7,10.9-40.5,21.4-34.9C98.6,111.2,93.1,128.1,93.1,128.1L93.1,128.1z"></path>
+                            <path class="rocket-base" d="M120.7,134.3c-3.8-0.6-8.6-1-13.8-1s-10,0.4-13.8,1c-5-10.2-8.3-25.8-8.3-43.3c0-30.7,9.9-55.6,22.1-55.6
+		S129,60.3,129,90.9C129,108.5,125.8,124.1,120.7,134.3L120.7,134.3z"></path>
+                            <path class="rocket-shadow" d="M103.5,133.3c19.6-40.6,7.3-85.2,4.1-98.1c11.9,0.9,21.4,25.4,21.4,55.5c0,17.5-3.2,33.2-8.3,43.3
+		c0,0-3.8-0.5-8.1-0.7S103.5,133.3,103.5,133.3L103.5,133.3z"></path>
+                            <circle class="window" cx="106.9" cy="78.2" r="10.5"></circle>
+                            <circle class="window" cx="106.9" cy="99.3" r="5.2"></circle>
+                        </g>
+                        <circle class="border s1" cx="105.5" cy="105.5" r="103" fill="none" stroke="#3f4a99" stroke-width="5" stroke-dasharray="647.1680866394973"></circle>
+                    </svg>
+
+                    <form class="col-12 p-0" id="reg_second-step" action="*" method="post" name="register second step"><label class="bf-label my-3" for="verification_code">لطفا کد پیامک شده را وارد کنید</label>
+                        <div class="col-12 p-0 d-flex flex-row align-items-center justify-content-between mb-2"><span>09125553102</span><span class="timeProid">01:45</span></div><input class="mb-3 col-12 p-2 bfo-i" type="number" placeholder="کد تأیید" id="verification_code"><button class="mb-3 col-12 p-2 bfo-b" type="submit">ادامه</button>
+                    </form>
+                    <div class="col-12 p-0 d-flex flex-row align-items-center rss_bottom-bar"><a class="ms-2 py-1 px-2" href="javascript:void(0)">تغییر شماره تلفن</a><a class="py-1 px-2" href="javascript:void(0)">بازیابی رمز عبور</a></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/es2"></script>
+</body>
+
+</html>
